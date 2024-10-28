@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Crack Crew - Servidores</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background: linear-gradient(180deg, #A77BCA, #5C4B8A);
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      color: white;
+      background-color: #483D8B;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1em;
+      transition: background-color 0.3s ease, transform 0.2s ease; /* Transição suave */
+    }
+
+    .btn:hover {
+      background-color: #36275D;
+      transform: scale(1.05);
+    }
+        .main-content {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #6A5ACD;
+            color: white;
+            border-radius: 10px;
+            padding: 15px;
+            width: 230px;
+            min-height: 100px;
+            text-align: center;
+        }
+
+        .btn-copy {
+            background-color: #483D8B; /* Cor de fundo do botão */
+            color: white; /* Cor do texto do botão */
+            border: none; /* Remove a borda do botão */
+            border-radius: 5px; /* Bordas arredondadas */
+            padding: 10px 15px; /* Padding do botão */
+            cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+            text-decoration: none; /* Remove sublinhado */
+            margin-top: 10px; /* Margem acima do botão */
+            transition: background-color 0.3s ease; /* Transição suave para cor de fundo */
+        }
+
+        .btn-copy:hover {
+            background-color: #36275D; /* Cor ao passar o mouse */
+        }
+
+        h2 {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Crack Crew</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="freeclients.html">Clients Gratuitos</a></li>
+            <li><a href="autoclicker.html">Auto Clickers</a></li>
+            <li><a href="forgeclient.html">Forge Clients</a></li>
+            <li><a href="crackedclients.html">Clients Cracked</a></li>
+            <li><a href="texturepack.html">Texture Packs</a></li>
+            <li><a href="server.html">Servers</a></li>
+            <li><a href="vpns.html">Paid VPNs</a></li>
+            <li><a href="https://discord.gg/crackcrew">Suporte</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <section class="hero">
+            <h1>Crack Crew</h1>
+            <h2>Servidores para usar cheat</h2>
+        </section>
+
+        <section id="servers">
+            <h2></h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Mineman</h3>
+                    <img src="assets/servers/minemanclub.png" alt="BlocksMC Image" style="width:69%; border-radius:5px;">
+                    <p></p>
+                    <button class="btn-copy" onclick="copyToClipboard('mineman.club')">Copy</button>
+                </div>
+                <div class="card">
+                    <h3>Hypixel</h3>
+                    <p></p>
+                    <img src="assets/servers/hypixel.jpg" alt="Astolfo Image" style="width:69%; border-radius:5px;">
+                    <button class="btn-copy" onclick="copyToClipboard('hypixel.net')">Copy</button>
+                </div>
+                <div class="card">
+                    <h3>BlocksMC</h3>
+                    <img src="assets/servers/blocksmc.jpg" alt="BlocksMC Image" style="width:69%; border-radius:5px;">
+                    <p></p>
+                    <button class="btn-copy" onclick="copyToClipboard('blocksmc.com')">Copy</button>
+                </div>
+                <div class="card">
+                    <h3>MushMC</h3>
+                    <img src="assets/servers/MushMC.jpg" alt="MushMC Image" style="width:69%; border-radius:5px;">
+                    <p></p>
+                    <button class="btn-copy" onclick="copyToClipboard('mushmc.gay')">Copy</button>
+                </div>
+                <div class="card">
+                  <h3>FlameMC</h3>
+                  <img src="assets/servers/FlameMC.jpg" alt="FlameMC Image" style="width:69%; border-radius:5px;">
+                  <p></p>
+                  <button class="btn-copy" onclick="copyToClipboard('flamemc.com.br')">Copy</button>
+                    
+                    
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        function copyToClipboard(text) {
+            const el = document.createElement('textarea');
+            el.value = text;
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el);
+            alert(`${text} copiado para a área de transferência!`);
+        }
+    </script>
+</body>
+</html>
