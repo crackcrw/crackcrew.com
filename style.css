@@ -125,3 +125,53 @@
   display: block;
   margin: 0 auto 10px; /* Centraliza a imagem e dá um espaçamento inferior */
 }
+
+/*MOBILES/*
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+  /* Centraliza o conteúdo principal */
+  .main-content {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  /* Sidebar fica oculta ou minimizada em telas pequenas */
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: static;
+    padding-top: 10px;
+  }
+
+  /* Ajusta o container dos cartões para ocupar a tela inteira */
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Os cartões ocupam a largura total da tela em dispositivos menores */
+  .card {
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  /* Ajusta o hero section */
+  .hero {
+    padding: 15px;
+  }
+}
+
+/* Estilos para tablets (telas médias) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .main-content {
+    margin-left: 220px;
+    padding: 15px;
+  }
+
+  /* Cartões ficam menores para caber melhor em telas médias */
+  .card {
+    width: 45%;
+    margin: 10px;
+  }
+}
